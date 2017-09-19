@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Dt" prefHeight="618.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
+    <children>
+        <Label fx:id="finalresult" layoutX="413.0" layoutY="510.0" minHeight="16" minWidth="69" />
+      <TextField fx:id="SimulationLenght" layoutX="131.0" layoutY="525.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="InitailInventoryLevel" layoutX="384.0" layoutY="116.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="FixedCostOrSetUpCost" layoutX="413.0" layoutY="243.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="UnitCost" layoutX="90.0" layoutY="282.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="HoldingCost" layoutX="413.0" layoutY="276.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="QOfBacklogAllow" layoutX="74.0" layoutY="116.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="32.0" layoutY="527.0" prefHeight="25.0" prefWidth="143.0" text="Simulation Length" />
+      <Label layoutX="261.0" layoutY="116.0" prefHeight="25.0" prefWidth="143.0" text="Initail Inventory Level" />
+      <Label layoutX="345.0" layoutY="239.0" prefHeight="25.0" prefWidth="174.0" text="SetUp Cost" />
+      <Label layoutX="31.0" layoutY="285.0" prefHeight="25.0" prefWidth="143.0" text="Unit Cost" />
+      <Label layoutX="338.0" layoutY="278.0" prefHeight="25.0" prefWidth="143.0" text="Holding Cost" />
+      <Label layoutX="25.0" layoutY="116.0" prefHeight="25.0" prefWidth="143.0" text="Backlog" />
+      <TextField fx:id="Policysmalls" layoutX="76.0" layoutY="80.0" prefHeight="25.0" prefWidth="166.0" />
+      <TextField fx:id="PolicyLargeS" layoutX="384.0" layoutY="80.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="57.0" layoutY="84.0" prefHeight="17.0" prefWidth="58.0" text="s">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="366.0" layoutY="84.0" prefHeight="17.0" prefWidth="58.0" text="S">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Button layoutX="194.0" layoutY="563.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="108.0" text="Simulate " />
+      <TextField fx:id="Demands" layoutX="17.0" layoutY="425.0" prefHeight="32.0" prefWidth="227.0" />
+      <TextField fx:id="ProbablilityOfDemands" layoutX="370.0" layoutY="425.0" prefHeight="32.0" prefWidth="227.0" />
+      <Label layoutX="27.0" layoutY="402.0" prefHeight="25.0" prefWidth="118.0" text="Demands" />
+      <Label layoutX="376.0" layoutY="401.0" prefHeight="25.0" prefWidth="174.0" text="Probablility Of Every Demand" />
+      <TextField fx:id="PalentyCost" layoutX="90.0" layoutY="316.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="14.0" layoutY="251.0" prefHeight="17.0" prefWidth="143.0" text="Selling Price" />
+      <TextField fx:id="sp1" layoutX="89.0" layoutY="247.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="14.0" layoutY="318.0" prefHeight="17.0" prefWidth="143.0" text="PenaltyCost" />
+      <Label layoutX="268.0" layoutY="28.0" text="POLICY">
+         <font>
+            <Font name="Arial Narrow" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="195.0" text="COST">
+         <font>
+            <Font name="Arial Narrow" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="363.0" text="DEMAND">
+         <font>
+            <Font name="Arial Narrow" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="495.0" text="SIMULATION">
+         <font>
+            <Font name="Arial Narrow" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="432.0" layoutY="563.0" mnemonicParsing="false" onAction="#handleButtonActionDt" text="D(t)" />
+    </children>
+</AnchorPane>
